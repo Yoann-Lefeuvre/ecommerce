@@ -33,7 +33,8 @@
 				{# data-bs-dismiss: signifie que le bouton ferme l'alerte et le bouton va automatiquement prendre la petite croix #}
 				{# aria-label: ça c'est pour les lecteurs d'écran #}
 				<div class="alert-message">
-					<strong>Votre compte n'est pas activé</strong>, renvoyer le lien d'activation
+					<strong>Votre compte n'est pas activé</strong>,
+					<a href="{{ path('resend_verif')}}">renvoyer le lien d'activation</a>
 				</div>
 			</div>
 		{% endif %}

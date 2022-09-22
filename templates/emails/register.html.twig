@@ -4,6 +4,6 @@
 <p>Votre inscription sur le sie e-commerce est à valider en cliquant sur le lien ci-dessous:
 </p>
 <p>
-	<a href="">Lien</a>
+	<a href="{{ absolute_url(path('verify_user', {token:token})) }}">{{ absolute_url(path('verify_user', {token:token})) }}</a>
 </p>
-<p>Ce lien expirera dans trois heures</p>
+<p>Ce lien expirera dans 3 heures</p>
